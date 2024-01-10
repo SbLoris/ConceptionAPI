@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body class="<%= isAdmin ? 'isAdmin' : '' %>">
+    <%- include ('includes/layout.ejs') %>
+<div class="chapitreNbr">
+    <label for="numeroChapitre">Numéro de chapitre :</label>
+    <input type="number" id="numeroChapitre" min="1" value="1">
+    <button id="refresh" onclick="document.location.reload(false)"> Aller chapitre </button>
+</div>
+
+    <script>
+        document.getElementById('numeroChapitre').addEventListener('input', function() {
+            const numeroChapitre = this.value;
+            // Mettez à jour l'URL en fonction du numéro de chapitre
+            window.history.replaceState({}, '', `/chapitre/${numeroChapitre}`);
+            // Mettez à jour le texte du bouton avec la nouvelle valeur
+            document.getElementById('refresh').textContent = `Aller chapitre ${numeroChapitre}`;
+        });
+    </script>
+</body>
+</html>

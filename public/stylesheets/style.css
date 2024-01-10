@@ -1,0 +1,119 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #4FAB4E;
+}
+.isAdmin{
+  background-color: red;
+}
+body{
+  background-color: #31362C;
+}
+p{
+  color: #f2f2f2;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #4FAB4E;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #31362C;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #31362C;
+  color: #f2f2f2;
+  transition: 0.25s ease-in-out;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4FAB4E;
+  color: #f2f2f2;
+}
+.container{
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+label, input, button{
+  color: #4FAB4E;
+  padding: 0.5rem;
+  margin: 0.5rem;
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+.chapitreNbr{
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+
+}
+.deconnexion{
+  color:#4FAB4E ;
+  transition: ease-in-out 0.25s;
+  background-color: #f2f2f2;
+
+}
+.deconnexion:hover{
+  color: #f2f2f2;
+  background-color: #4FAB4E;
+  transition: ease-in-out 0.25s;
+}
+.username{
+  font-weight: 900;
+  color: #4FAB4E;
+}
+.message{
+ font-size: larger;
+ color: #f2f2f2;
+}
+.date{
+ font-weight: lighter;
+ color: #f2f2f2;
+ font-size: smaller;
+}
+
+.msgAll{
+  display: flex;
+  justify-content: space-between;
+}
+.vousMsg .username{
+  color:red;
+}
+.roomInput{
+  margin-bottom: 5rem;
+}
+
+#form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 9rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+#input { border: none; padding: 1rem 5rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+#input:focus { outline: none; }
+#form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages > li { padding: 0.5rem 1rem; }
+#messages{
+  margin-bottom: 5rem;
+}
